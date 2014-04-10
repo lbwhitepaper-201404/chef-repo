@@ -1,0 +1,19 @@
+{
+  "name": "simplehtml-haproxy",
+  "default_attributes": {
+    "cloud_lb_service": {
+      "type": "rs_haproxy",
+      "load_balancer": "default",
+      "terminate_on_detach": true
+    }
+  },
+  "run_list": [
+    "recipe[byocm-chef::deserialize]",
+    "recipe[ephemeral_lvm::default]",
+    "recipe[rs-base::default]",
+    "recipe[ohai-private-ipaddress]",
+    "recipe[simplehtml-webserver]",
+    "recipe[cloud_lb_service::default]",
+    "recipe[cloud_lb_service::attach]"
+  ]
+}

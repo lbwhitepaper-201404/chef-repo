@@ -1,0 +1,17 @@
+{
+  "name": "haproxy-lb",
+  "default_attributes": {
+    "rs-haproxy": {
+      "pools": ["default"]
+    }
+  },
+  "run_list": [
+    "recipe[byocm-chef::deserialize]",
+    "recipe[ephemeral_lvm::default]",
+    "recipe[rs-base::default]",
+    "recipe[rs-haproxy::default]",
+    "recipe[rs-haproxy::tags]",
+    "recipe[rs-haproxy::collectd]",
+    "recipe[rs-haproxy::frontend]"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "sources": {
+    "simplehtml-server": {
+      "locked_version": "0.1.0",
+      "git": "git://github.com/rgeyer-chef-blueprints/simplehtml-webserver.git",
+      "ref": "2ecfb1a3753c6f24df015e2af74d828f0dda0b8f"
+    },
+    "marker": {
+      "locked_version": "1.0.0",
+      "git": "git://github.com/rightscale-cookbooks/marker.git",
+      "ref": "893cb7e00691a5b6a6192b43b67d7a975b6c41c4"
+    },
+    "ephemeral_lvm": {
+      "locked_version": "1.0.4",
+      "git": "git://github.com/rightscale-cookbooks/ephemeral_lvm.git",
+      "ref": "ff1d7f537e0bd69418ec635bdd24f005adfef28b"
+    },
+    "rs-base": {
+      "locked_version": "1.0.0",
+      "git": "git://github.com/rightscale-cookbooks/rs-base.git",
+      "ref": "10065361e0af6a928e57b6ebb3ff6357e64af63f"
+    },
+    "collectd": {
+      "locked_version": "1.1.0",
+      "git": "git://github.com/EfrainOlivares/chef-collectd.git",
+      "ref": "ec50609ed6eb193e0411f30aced91befa571940f"
+    },
+    "apt": {
+      "locked_version": "2.3.8"
+    },
+    "apache2": {
+      "locked_version": "1.9.6"
+    },
+    "iptables": {
+      "locked_version": "0.13.0"
+    },
+    "logrotate": {
+      "locked_version": "1.5.0"
+    },
+    "pacman": {
+      "locked_version": "1.1.1"
+    },
+    "lvm": {
+      "locked_version": "1.0.4"
+    },
+    "ntp": {
+      "locked_version": "1.4.0"
+    },
+    "rightscale_tag": {
+      "locked_version": "1.0.1"
+    },
+    "machine_tag": {
+      "locked_version": "1.0.4"
+    },
+    "swap": {
+      "locked_version": "0.3.6"
+    },
+    "rsyslog": {
+      "locked_version": "1.8.0"
+    }
+  }
+}
