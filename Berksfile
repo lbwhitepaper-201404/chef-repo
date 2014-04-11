@@ -10,11 +10,11 @@ group :shared do
 end
 
 group :simplehtml_server do
-  cookbook 'simplehtml-webserver', github: 'rgeyer-chef-blueprints/simplehtml-webserver'
-  cookbook 'cloud_lb_service', path: '/Users/ryanjgeyer/Code/Chef/rgeyer-rs-cookbooks/cloud_lb_service'
+  cookbook 'simplehtml-webserver', github: 'lbwhitepaper-201404/simplehtml-webserver'
+  cookbook 'cloud_lb_service', github: 'lbwhitepaper-201404/cloud_lb_service'
   cookbook 'ohai-private-ipaddress', github: 'wanelo-chef/ohai-private-ipaddress'
-  cookbook 'google_cloud', path: '/Users/ryanjgeyer/Code/Chef/rgeyer-rs-cookbooks/google_cloud'
-  cookbook 'rsc_google_cloud', path: '/Users/ryanjgeyer/Code/Chef/rgeyer-rs-cookbooks/rsc_google_cloud'
+  cookbook 'google_cloud', github: 'lbwhitepaper-201404/google_cloud', branch: 'rjg'
+  cookbook 'rsc_google_cloud', github: 'lbwhitepaper-201404/rsc_google_cloud', branch: 'v14'
 end
 
 group :haproxy_lb do
