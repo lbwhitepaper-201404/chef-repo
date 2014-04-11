@@ -2,9 +2,7 @@
   "name": "simplehtml-haproxy",
   "default_attributes": {
     "cloud_lb_service": {
-      "type": "rs_haproxy",
-      "load_balancer": "default",
-      "terminate_on_detach": true
+      "type": "rs_haproxy"
     }
   },
   "run_list": [
